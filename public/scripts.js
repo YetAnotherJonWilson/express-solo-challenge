@@ -1,7 +1,7 @@
 $('document').ready(function() {
   $('body').on('click', 'button', function() {
-    $.get('http://localhost:3000/balance', function( data ) {
-      $( ".result" ).html( data.balance );
+    $.get('/balance', function( data ) {
+      $( ".result" ).html( data );
     });
     // var something data.something (use postman to see this)
     // div append var

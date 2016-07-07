@@ -8,7 +8,7 @@ var second = require('./modules/two.js');
 var third = require('./modules/three.js');
 
 // third.balance();
-var fourth = {'balance': third.finalNumber()};
+
 
 app.use(express.static('public'));
 
@@ -18,5 +18,5 @@ app.listen(port, function onServerListen(){
 });
 
 app.get('/balance', function(request, response) {
-  response.send(fourth);
+  response.send(third.finalNumber());
 });
