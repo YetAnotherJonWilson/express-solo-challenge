@@ -1,7 +1,9 @@
 var express = require('express');
 var path = require('path');
 var app = express();
-var port = 3000;
+var port = proces.env.PORT || 3000;
+
+
 
 var first = require('./modules/one.js');
 var second = require('./modules/two.js');
